@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción al HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: white;
+            text-align: center; 
+        }
+        header, nav, footer {
+            text-align: center; 
+        }
+        nav {
+            text-align: left; 
+        }
+        .highlight {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left; 
+            margin: 0 auto; 
+            max-width: 800px; 
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto; /* Centra la imagen */
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            border: 2px solid #999;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            display: inline-block; 
+        }
+        button:hover {
+            background-color: #ddd;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        button a {
+            text-decoration: none; 
+            color: inherit; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Introducción al HTML</h1>
+        <p>Explora los conceptos básicos del HTML y cómo este lenguaje de marcado se utiliza para estructurar páginas web.</p>
+        <img src="174854.png" width="300" height="200" alt="Logo de HTML">
+    </header>
+
+    <nav>
+        <h3>SECCIONES</h3>
+        <ol>
+            <li><a href="#seccion1">seccion1</a></li>
+            <li><a href="#seccion2">seccion2</a></li>
+            <li><a href="#seccion3">seccion3</a></li>
+        </ol>
+    </nav>
+    
+    <main>
+        <section id="seccion1" class="highlight">
+            <h2>seccion1</h2>
+            <p>Este es un ejemplo de la etiqueta de párrafo. El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.</p>
+            <ul>
+                <li><b>Lenguaje de marcado:</b> HTML utiliza etiquetas para definir la estructura de los documentos.</li>
+                <li><b>Elementos:</b> Los elementos HTML incluyen encabezados, párrafos, enlaces, imágenes y más.</li>
+                <li><b>Propósito:</b> Facilitar la presentación de contenido en navegadores web.</li>
+            </ul>
+        </section>
+
+        <section id="seccion2" class="highlight">
+            <h2>seccion2</h2>
+            <p>Este es un ejemplo de la etiqueta de párrafo. El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.</p>
+            <ul>
+                <li><b>&lt;html&gt;:</b> Elemento raíz del documento.</li>
+                <li><b>&lt;head&gt;:</b> Contiene metadatos, enlaces a estilos y scripts.</li>
+                <li><b>&lt;body&gt;:</b> Contiene el contenido visible de la página.</li>
+            </ul>
+            <img src="estructura-basica.jpg" alt="Estructura Básica de HTML" width="300" height="200">
+            <button><a href="https://www.youtube.com/watch?v=mNbnV3aN3KA">Aprende más sobre HTML</a></button>
+        </section>
+
+        <section id="seccion3" class="highlight">
+            <h2>seccion3</h2>
+            <p>Este es un ejemplo de la etiqueta de párrafo. El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.</p>
+            <ul>
+                <li><b>&lt;p&gt;:</b> Define un párrafo.</li>
+                <li><b>&lt;a&gt;:</b> Define un enlace.</li>
+                <li><b>&lt;img&gt;:</b> Define una imagen.</li>
+                <li><b>Atributos:</b> Proporcionan información adicional sobre los elementos. Por ejemplo, <code>src</code> para imágenes y <code>href</code> para enlaces.</li>
+            </ul>
+            <img src="images.png" alt="Etiquetas HTML" width="300" height="200">
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p>Autor: Elisa Ruiz</p>
+        </address>
+    </footer>
+</body>
+</html>
