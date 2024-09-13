@@ -1,6 +1,6 @@
 body {
-    font-family: 'Caudex', sans-serif; 
-    background: linear-gradient(to right, #D5A6F2, #A2C2E0); 
+    font-family: 'Caudex', sans-serif; /* Aplica la fuente Caudex */
+    background: linear-gradient(to right, #D5A6F2, #A2C2E0); /* Degradado morado pastel a celeste */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,13 +10,13 @@ body {
 }
 
 .form-container {
-    background-color: #ffffffad; 
+    background-color: #ffffffad; /* Blanco semi-transparente */
     padding: 20px;
     border-radius: 8px;
-    border: 2px solid #734292; 
+    border: 2px solid #734292; /* Borde morado pastel */
     box-shadow: 
-        0 0 10px rgba(84, 19, 122, 0.3), 
-        0 0 15px rgba(82, 9, 124, 0.5); 
+        0 0 10px rgba(84, 19, 122, 0.3), /* Sombra interna con color morado pastel */
+        0 0 15px rgba(82, 9, 124, 0.5); /* Sombra externa más difusa para el efecto luminoso */
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
@@ -35,9 +35,9 @@ h1 {
 h1::after {
     content: "";
     display: block;
-    width: 25%; 
-    height: 4px; 
-    background: linear-gradient(to right, #D5A6F2, #A2C2E0); 
+    width: 25%; /* Ancho reducido */
+    height: 4px; /* Mantener grosor */
+    background: linear-gradient(to right, #D5A6F2, #A2C2E0); /* Degradado morado pastel a celeste */
     border-radius: 2px;
     position: absolute;
     bottom: 0;
@@ -60,34 +60,34 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     width: 100%;
     padding: 8px 0;
     border: none;
-    border-bottom: 2px solid #a5a4a4; 
+    border-bottom: 2px solid #bbb; 
     background-color: transparent;
     font-size: 14px;
-    font-family: 'Caudex', sans-serif; 
+    font-family: 'Caudex', sans-serif;
     box-sizing: border-box;
     outline: none;
     transition: border-bottom-color 0.3s ease;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="color"]:focus, select:focus {
-    border-bottom-color: #1d033f; 
+    border-bottom-color: #150031; /* Color de línea al enfocar */
 }
 
 input[type="submit"] {
-    background-color: #b47bc5; 
+    background-color: #b884f3; /* Azul pastel */
     color: #fff;
     border: none;
     border-radius: 4px;
-    padding: 10px; 
+    padding: 8px; /* Reducir padding para hacer el botón más pequeño */
     cursor: pointer;
-    font-size: 12px; 
-    width: auto; 
+    font-size: 12px; /* Reducir tamaño de fuente */
+    width: auto; /* Ajustar el ancho automáticamente */
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-top: 10px; 
+    margin-top: 10px; /* Agregar espacio arriba */
 }
 
 input[type="submit"]:hover {
-    background-color: #96c7f5; 
+    background-color: #93d7f7; /* Azul pastel más claro */
     transform: scale(1.05);
 }
 
