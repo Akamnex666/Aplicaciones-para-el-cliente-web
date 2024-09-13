@@ -1,0 +1,97 @@
+body {
+    font-family: 'Caudex', sans-serif; 
+    background: linear-gradient(to right, #D5A6F2, #A2C2E0); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #ffffffad; 
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #734292; 
+    box-shadow: 
+        0 0 10px rgba(84, 19, 122, 0.3), 
+        0 0 15px rgba(82, 9, 124, 0.5); 
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-in;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 25%; 
+    height: 4px; 
+    background: linear-gradient(to right, #D5A6F2, #A2C2E0); 
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="url"], input[type="search"], input[type="color"], select {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 2px solid #a5a4a4; 
+    background-color: transparent;
+    font-size: 14px;
+    font-family: 'Caudex', sans-serif; 
+    box-sizing: border-box;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="color"]:focus, select:focus {
+    border-bottom-color: #1d033f; 
+}
+
+input[type="submit"] {
+    background-color: #b47bc5; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px; 
+    cursor: pointer;
+    font-size: 12px; 
+    width: auto; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px; 
+}
+
+input[type="submit"]:hover {
+    background-color: #96c7f5; 
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
