@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Asistencia</title>
+    <link rel="stylesheet" href="../css/attendance.css">
+</head>
+<body>
+    <div class="container">
+        <button class="back-button" onclick="location.href='../html/dashboard-teacher.html'">↩</button> 
+        <img src="https://www.uleam.edu.ec/wp-content/uploads/2012/09/LOGO-ULEAM.png" alt="Logo ULEAM" class="uleam-logo">
+        <h2>Registro de Asistencia</h2>
+        <form id="attendanceForm" class="attendance-form">
+            <label for="semester">Nivel de Semestre:</label>
+            <select id="semester" name="semester" required>
+                <option value="">Selecciona un nivel</option>
+                <option value="1">1er Nivel</option>
+                <option value="2">2do Nivel</option>
+                <option value="3">3er Nivel</option>
+            </select>
+
+            <div id="parallelContainer" style="display: none;">
+                <label for="parallel">Paralelo:</label>
+                <select id="parallel" name="parallel" required>
+                    <option value="" style="color: gray;">Seleccione un paralelo</option>
+                </select>
+            </div>
+
+            <div id="dateContainer" style="display: none;">
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div id="studentCheckboxesContainer" style="display: none;">
+                <h3>Seleccionar estudiantes:</h3>
+                <div id="studentCheckboxes"></div>
+            </div>
+
+            <button type="submit" style="display: none;" id="submitBtn">Registrar Asistencia</button>
+        </form>
+    </div>
+    
+    <script src="../JavaScript/asistencia.js"></script>
+</body>
+</html>

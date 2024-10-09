@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Profesor</title>
+    <link rel="stylesheet" href="../css/dashboard-teacher.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <div class="header-logo">
+                <img src="https://www.uleam.edu.ec/wp-content/uploads/2012/09/LOGO-ULEAM-VERTICAL.png" alt="Logo ULEAM" class="logo"> <!-- Logo de la ULEAM -->
+            </div>
+            <h1>BIENVENIDO/A DOCENTE</h1> 
+            <div class="user-info">
+                <span>PATRICIA ALEXANDRA QUIROZ PALMA</span> <!-- Nombre del docente -->
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">▸</button> <!-- Flecha hacia abajo -->
+                    <div class="dropdown-content">
+                        <a href="config.html">Configuración</a>
+                        <a href="security.html">Seguridad</a>
+                        <a href="login.html" class="logout">Cerrar sesión</a> <!-- Opción de cerrar sesión -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section class="attendance-summary">
+            <h2>DASHBOARD</h2>
+            <a href="attendance-record.html" class="btn">Asistencia</a>
+            <h2>Cursos</h2>
+            <div class="course-container">
+                <div class="course-card">
+                    <img src="https://img.freepik.com/fotos-premium/fondo-abstracto-color-verde-pastel-poligono_112418-70.jpg?w=1060" alt="Imagen del Curso 1" class="course-img">
+                    <h3>A -- Aplicaciones para el cliente web</h3></a>
+                    <p>CARRERA: SOFTWARE 2024</p>
+                </div>
+                <div class="course-card">
+                    <img src="https://t3.ftcdn.net/jpg/09/06/31/94/240_F_906319496_Mrvakb593AGBtYaN0WQiQNzisCFWvls4.jpg" alt="Imagen del Curso 2" class="course-img">
+                    <h3>B -- Aplicaciones para el cliente web</h3></a>
+                    <p>CARRERA: SOFTWARE 2024</p>
+                </div>
+                <div class="course-card">
+                    <img src="https://thumbs.dreamstime.com/b/pastel-geometric-background-camouflage-pattern-colorful-rectangular-geometric-background-camouflage-pattern-pastel-shades-106660880.jpg" alt="Imagen del Curso 4" class="course-img">
+                    <h3>A -- DISEÑO WEB</h3></a>
+                    <p>CARRERA: SOFTWARE 2024</p>
+                </div>
+                <div class="course-card">
+                    <img src="https://t4.ftcdn.net/jpg/08/39/88/13/240_F_839881312_gUQmzdYwKbyWxv3TzYwVkZFurgtmfaS6.jpg" alt="Imagen del Curso 4" class="course-img">
+                    <h3>B -- DISEÑO WEB</h3>
+                    <p>CARRERA: SOFTWARE 2024</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        © 2024 Universidad Laica Eloy Alfaro de Manabí
+    </footer>
+    <script src="../JavaScript/dashboard-teacher.js"></script>
+</body>
+</html>

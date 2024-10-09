@@ -1,0 +1,237 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del dashboard */
+.dashboard-container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto; /* Centrando el contenedor */
+}
+
+/* Estilo del encabezado */
+header {
+    display: flex; /* Usar flexbox para el encabezado */
+    justify-content: space-between; /* Espaciado entre los elementos */
+    align-items: center; /* Alinear verticalmente */
+    margin-bottom: 10px; /* Reducir margen inferior */
+}
+
+/* Estilo del logo */
+.header-logo img {
+    height: 220px; /* Altura del logo */
+}
+
+/* Estilo del nombre del usuario y el dropdown */
+.user-info {
+    display: flex; /* Usar flexbox para el contenedor */
+    align-items: center; /* Alinear verticalmente */
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 40px 0;
+    text-align: center; /* Centrar el texto */
+}
+h1::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 4px;
+    background: linear-gradient(to right, #eb6363, #c50303); /* Barra degradada en rojo */
+    margin: 10px auto;
+    border-radius: 5px; /* Bordes redondeados */
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.user-info span {
+    margin-right: 10px; /* Espaciado entre el nombre y el ícono */
+    font-size: 1.2rem;
+    color: #333; /* Color del nombre del estudiante */
+}
+
+/* Estilo para el botón desplegable */
+.dropbtn {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor de mano al pasar */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    transition: transform 0.3s; /* Transición para la animación */
+    margin-right: 10px; /* Espacio entre la flecha y el nombre */
+}
+/* Clase que se aplica cuando el menú está activo */
+.dropbtn.active {
+    transform: rotate(90deg); /* Rota 90 grados cuando está activo */
+}
+/* Estilo para el menú desplegable */
+.dropdown-content {
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Posición absoluta para que se superponga */
+    background-color: white; /* Fondo blanco */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra para el menú */
+    z-index: 1; /* Asegura que esté encima */
+    margin-top: 10px; /* Espacio entre el botón y el menú */
+}
+/* Mostrar el menú al hacer clic */
+.dropdown-content.show {
+    display: block; /* Muestra el menú */
+}
+/* Estilo de los enlaces en el menú desplegable */
+.dropdown-content a {
+    color: black; /* Color del texto */
+    padding: 12px 16px; /* Espaciado */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Para que ocupe el ancho completo */
+}
+/* Efecto al pasar el mouse sobre los enlaces */
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+}
+/* Estilo específico para la opción "Cerrar sesión" */
+.dropdown-content a.logout {
+    color: #c5002b; /* Color rojo para resaltar el enlace de cerrar sesión */
+    font-weight: bold; /* Negrita para mayor visibilidad */
+}
+/* Estilo para los bloques de cursos */
+.course-blocks {
+    margin-top: 20px;
+}
+
+/* Estilo del contenedor de cursos */
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Más espacio entre columnas */
+    gap: 20px;
+}
+
+/* Estilo de las tarjetas de curso */
+.course-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Añadido efecto de transición */
+}
+
+.course-card:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+/* Imágenes dentro de los bloques de curso */
+.course-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+}
+
+/* Estilo de las descripciones de los cursos */
+.course-card p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Sección de resumen de asistencia */
+.attendance-summary {
+    display: flex;
+    flex-direction: column; /* Organiza el contenido en columna */
+    align-items: center; /* Centra horizontalmente el contenido */
+    margin-top: 30px;
+    text-align: center;
+}
+
+.attendance-summary h2 {
+    color: #444;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.attendance-summary p {
+    font-size: 1.4rem;
+    color: #333;
+    background-color: #eef9f3;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* círculo de porcentaje */
+canvas {
+    margin: 20px auto; /* Centrando el canvas */
+    display: block;
+    max-width: 150px; /* Ancho maximo*/
+    height: 150px; /* Altura */
+}
+/* calendario */
+#calendar {
+    background-color: #fff;
+    border: 2px solid #abf0a9; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 90%; /* Ancho del calendario */
+    margin: 20px auto; /* Centrando el calendario */
+    overflow-x: auto; /* Manejar el desbordamiento horizontal */
+}
+
+/* Estilo de la tabla del calendario */
+#calendar table {
+    width: 100%; /* Ancho total de la tabla */
+    border-collapse: collapse; /* Eliminar espacio entre bordes */
+    font-size: 0.9rem; /* Tamaño de fuente reducido */
+}
+
+/* Estilo de las celdas del calendario */
+#calendar th, #calendar td {
+    border: 1px solid #abf0a9; /* Borde azul */
+    padding: 8px; /* Espaciado interno de celdas */
+    text-align: center; /* Alinear texto al centro */
+}
+
+/* Estilo de celdas unidas */
+#calendar td[rowspan] {
+    background-color: #eef9f3; /* Color de fondo para celdas unidas */
+    font-weight: bold; /* Negrita para celdas que contienen materias */
+}
+
+/* Estilo del encabezado de la tabla */
+#calendar th {
+    background-color: #d1fdc3; /* Color de fondo para los encabezados */
+    color: #333; /* Color del texto en encabezados */
+    font-weight: bold; /* Negrita para encabezados */
+}
+
+/* Estilo de filas alternas */
+#calendar tr:nth-child(even) {
+    background-color: #ffffff; /* Color de fondo para filas pares */
+}
+
+/* Efecto al pasar el mouse */
+#calendar tr:hover {
+    background-color: #e4fade; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo de filas con materias */
+#calendar td {
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+#calendar td:not(:empty) {
+    font-weight: bold; /* Negrita para celdas que contienen materias */
+    color: #333; /* Color del texto */
+}

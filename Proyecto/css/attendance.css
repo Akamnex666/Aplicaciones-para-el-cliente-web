@@ -1,0 +1,135 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #3aad5767;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    position: relative; /* Necesario para el botón de regresar */
+}
+
+/* Estilo del botón de regreso */
+.back-button {
+    position: absolute; /* Colocarlo en la esquina superior derecha */
+    top: 10px; /* Espacio desde la parte superior */
+    right: 10px; /* Espacio desde el lado derecho */
+    font-size: 24px; /* Tamaño del ícono */
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    color: #333; /* Color del ícono */
+    z-index: 1000; /* Asegurarse de que esté en la parte superior */
+    transition: transform 0.2s; /* Transición para la animación */
+}
+
+/* Efecto al pasar el ratón */
+.back-button:hover {
+    outline: none; /* Sin contorno */
+    background: none; /* Sin fondo */
+    color: #555; /* Color de hover opcional */
+    transform: scale(1.2); /* Aumentar tamaño al pasar el ratón */
+}
+
+/* Logo de ULEAM */
+.uleam-logo {
+    display: block;
+    margin: 40px auto; /* Espacio superior */
+    width: 200px; /* Aumentar el tamaño del logo */
+}
+
+/* Título */
+h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Línea debajo del título */
+h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: linear-gradient(to right, #E7B83A, #FF5733); /* Barra roja degradada */
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Formulario de asistencia */
+.attendance-form {
+    text-align: left;
+}
+
+/* Estilos de etiquetas y campos */
+label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-top: 20px;
+}
+
+select, input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+h3 {
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Checkbox de estudiantes */
+label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+label:hover {
+    color: #007bff;
+}
+
+/* Botón de registro */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #6cdf98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #42924f;
+}
