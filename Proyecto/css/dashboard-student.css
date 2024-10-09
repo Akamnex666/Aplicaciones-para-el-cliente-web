@@ -1,11 +1,9 @@
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f4f8;
     margin: 0;
     padding: 0;
 }
-
 /* Contenedor del dashboard */
 .dashboard-container {
     width: 80%;
@@ -16,7 +14,6 @@ body {
     border-radius: 10px;
     margin: 20px auto; /* Centrando el contenedor */
 }
-
 /* Estilo del encabezado */
 header {
     display: flex; /* Usar flexbox para el encabezado */
@@ -24,18 +21,15 @@ header {
     align-items: center; /* Alinear verticalmente */
     margin-bottom: 10px; /* Reducir margen inferior */
 }
-
 /* Estilo del logo */
 .header-logo img {
     height: 220px; /* Altura del logo */
 }
-
 /* Estilo del nombre del usuario y el dropdown */
 .user-info {
     display: flex; /* Usar flexbox para el contenedor */
     align-items: center; /* Alinear verticalmente */
 }
-
 /* Estilo del título */
 h1 {
     font-size: 2rem;
@@ -109,14 +103,12 @@ h1::after {
 .course-blocks {
     margin-top: 20px;
 }
-
 /* Estilo del contenedor de cursos */
 .course-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Más espacio entre columnas */
     gap: 20px;
 }
-
 /* Estilo de las tarjetas de curso */
 .course-card {
     background-color: #fff;
@@ -126,11 +118,9 @@ h1::after {
     text-align: center;
     transition: transform 0.3s ease-in-out; /* Añadido efecto de transición */
 }
-
 .course-card:hover {
     transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
 }
-
 /* Imágenes dentro de los bloques de curso */
 .course-card img {
     width: 100%;
@@ -138,13 +128,11 @@ h1::after {
     border-radius: 8px 8px 0 0;
     margin-bottom: 10px;
 }
-
 /* Estilo de las descripciones de los cursos */
 .course-card p {
     margin-bottom: 10px;
     color: #555;
 }
-
 /* Sección de resumen de asistencia */
 .attendance-summary {
     display: flex;
@@ -153,13 +141,11 @@ h1::after {
     margin-top: 30px;
     text-align: center;
 }
-
 .attendance-summary h2 {
     color: #444;
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
-
 .attendance-summary p {
     font-size: 1.4rem;
     color: #333;
@@ -169,7 +155,6 @@ h1::after {
     display: inline-block;
     margin-bottom: 20px;
 }
-
 /* círculo de porcentaje */
 canvas {
     margin: 20px auto; /* Centrando el canvas */

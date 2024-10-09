@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const dropdownMenu = document.querySelector('.dropdown-content');
 
     dropbtn.addEventListener('click', function() {
-        dropdownMenu.classList.toggle('show'); // Alterna la visibilidad del menú
-        dropbtn.classList.toggle('active'); // Añade la clase activa para la animación
+        dropdownMenu.classList.toggle('show'); // visibilidad del menú
+        dropbtn.classList.toggle('active'); // 
     });
 
     // Cierra el menú si se hace clic fuera de él
@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Acción de cerrar sesión
     document.querySelector('.logout').addEventListener('click', function() {
         // Redirigir a la página de login
-        window.location.href = 'login.html'; // Cambia esta ruta según tu estructura de carpetas
+        window.location.href = 'login.html'; 
     });
 });
